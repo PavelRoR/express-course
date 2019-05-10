@@ -43,7 +43,7 @@ $(document).ready(function () {
     $('#ray_revs').owlCarousel({
         items: 1,
         loop: true,
-        margin: 10,
+        margin: 15,
         nav: true,
         navText: ["<", ">"],
         dots: false
@@ -51,12 +51,31 @@ $(document).ready(function () {
     $('#janna_revs').owlCarousel({
         items: 1,
         loop: true,
-        margin: 10,
+        margin: 15,
         nav: true,
         navText: ["<", ">"],
         dots: false
     });
     $('#janna_videos').owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: ["<", ">"],
+        dots: false,
+        responsive: {
+             380: {
+                 items: 2
+             },
+             767: {
+                 items: 2
+             },
+             1200: {
+                 items: 3
+             }
+         }
+    });
+    $('#ray_videos').owlCarousel({
         items: 3,
         loop: true,
         margin: 10,
@@ -85,7 +104,7 @@ $(document).ready(function () {
     });
 
     $(function () {
-        $('#janna_videos .owl-prev, #janna_videos .owl-next').click(function () {
+        $('#janna_videos .owl-prev, #janna_videos .owl-next, #ray_videos .owl-prev, #ray_videos .owl-next').click(function () {
             $('.video_wrapper_revs iframe').each(function () {
                 var l = $(this).parent().attr('data-img');
                 $(this).parent().html('<img class="video_rev_img" src="' + l + '" alt="Видео отзыв">');
