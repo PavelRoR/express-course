@@ -1,0 +1,157 @@
+#vip
+	padding 50px 0
+	background-color: #49826D
+	background-image url(../img/vip_bg.jpg)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+.vip_title
+	font-size: 46px;
+	font-family: "Pattaya",serif
+	font-weight: bold
+	font-style: italic
+	color: rgb(255, 255, 255);
+	line-height: 0.522;
+	text-align: center;
+	margin-bottom: 50px
+.vip_list
+	width 100%
+	max-width 850px
+	margin 0 auto 45px
+	li
+		position relative
+		color #fff
+		margin-bottom: 5px
+		padding-left: 17px
+		list-style none
+		&:before
+			content: ''
+			display block
+			height 17px
+			width 9px
+			position: absolute
+			left 0
+			top 3px
+			background-image url(../img/rect.png)
+			background-repeat no-repeat
+			background-position 0 0
+		&:last-child
+			margin-bottom: 0
+.vip_for_item_title
+	font-size: 22px;
+	font-family: "AkrobatBold", sans-serif;
+	color: rgb(249, 221, 26);
+	text-transform: uppercase;
+	line-height: 1.091;
+	text-align: center;
+	position: relative
+	margin-bottom: 15px
+	overflow hidden
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top 12px
+		left 0
+		height 2px
+		width 190px
+		background-color: #FFDE00
+.vip_for_item_2
+	&:before
+		width 200px
+		left auto
+		right 0
+.vip_for_item_text
+	color #fff
+	margin-bottom: 10px
+.vip_info
+	position relative
+	width 100%
+	max-width 900px
+	float: right
+	border:  2px solid #FFE100
+	border-left: 0
+	padding 25px 30px 25px 215px
+	margin-bottom: 40px
+	background-repeat no-repeat
+	background-position: left 65px center
+	&:before
+	&:after
+		content: ''
+		display block
+		width 2px
+		height 35%
+		background-color: #FFE100
+		left 0
+		top 0
+		position: absolute
+	&:after
+		top auto
+		bottom 0
+.vip_info_1
+	background-image url(../img/vip_icon_1.png)
+.vip_info_2
+	background-image url(../img/vip_icon_2.png)
+.vip_info_3
+	background-image url(../img/vip_icon_3.png)
+	margin-bottom: 65px
+	&:before
+	&:after
+		height 25%
+.vip_info_title
+	font-size: 22px;
+	font-family: "AkrobatBold", sans-serif;
+	color: rgb(255, 224, 19);
+	text-transform: uppercase;
+	line-height: 1.091;
+	position: absolute
+	left -130px
+	top calc(50% - 12px)
+.vip_info_text 
+	color #fff
+	line-height: 24px
+	margin-bottom:  10px
+	&:last-of-type
+		margin-bottom: 0
+	span
+		color #ffe013
+.vip_ol_list {
+	list-style: none;
+	counter-reset: my-counter;
+}
+.vip_ol_list li {
+	counter-increment: my-counter;
+	margin: 0 0 40px 70px;
+	color: #ffffff
+	line-height: 24px
+}
+.vip_ol_list li::before {
+	content: counter(my-counter);
+	border 2px solid rgb(254, 220, 24);
+	background-color: rgb(255, 255, 255);
+	display: inline-block
+	text-align: center
+	margin  0 23px 0 -70px
+	width: 47px;
+	height: 47px;
+	line-height: 42px;
+	font-size: 30px;
+	position relative
+	top 23px
+	font-family: "AkrobatBold", sans-serif;
+	color: rgb(220, 190, 16);
+}
+.vip_ol_list_2
+	counter-reset: my-counter-2 4;
+	li
+		counter-increment: my-counter-2;
+		&:before
+			content: counter(my-counter-2);
+.vip_ol_list_3
+	counter-reset: my-counter-3 8;
+	li
+		counter-increment: my-counter-3;
+		&:before
+			content: counter(my-counter-3);
+.button_vip
+	margin-top: 40px
