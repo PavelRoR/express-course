@@ -1,0 +1,64 @@
+#plan
+	padding 35px 0 70px
+.day
+	position relative
+	margin-bottom: 35px
+.day_img
+	position: absolute
+	left 0
+	top: calc(50% - 136px)
+	width 416px
+	height 273px
+	background-repeat no-repeat
+	background-position: center
+	z-index 1
+.day_img_1
+	background-image url(../img/day_img_1.jpg)
+.day_img_2
+	background-image url(../img/day_img_2.jpg)
+.day_img_3
+	background-image url(../img/day_img_3.jpg)
+.day_info
+	position relative
+	width 100%
+	max-width 760px
+	float right
+	background-color: #377a69
+	padding 20px 25px
+	z-index 9
+.day_info_title
+	border 2px solid rgb(254, 220, 24);
+	background-color: #fff
+	position: absolute;
+	display: inline-block
+	padding 5px 0
+	text-align: center
+	top 16px
+	left -180px
+	font-size: 60px;
+	color: rgb(255, 224, 19);
+	height: 60px
+	width 190px
+	line-height: .6
+.day_info_list
+	width 48%
+	float left
+	li
+		position relative
+		color #fff
+		margin-bottom: 5px
+		padding-left: 17px
+		list-style none
+		&:before
+			content: ''
+			display block
+			height 17px
+			width 9px
+			position: absolute
+			left 0
+			top 3px
+			background-image url(../img/rect.png)
+			background-repeat no-repeat
+			background-position 0 0
+		&:last-child
+			margin-bottom: 0
