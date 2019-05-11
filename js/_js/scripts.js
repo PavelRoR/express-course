@@ -57,15 +57,14 @@ $(document).ready(function () {
         dots: false
     });
     $('#janna_videos').owlCarousel({
-        items: 3,
         loop: true,
         margin: 10,
         nav: true,
         navText: ["<", ">"],
         dots: false,
         responsive: {
-             380: {
-                 items: 2
+             280: {
+                 items: 1
              },
              767: {
                  items: 2
@@ -76,15 +75,14 @@ $(document).ready(function () {
          }
     });
     $('#ray_videos').owlCarousel({
-        items: 3,
         loop: true,
         margin: 10,
         nav: true,
         navText: ["<", ">"],
         dots: false,
         responsive: {
-             380: {
-                 items: 2
+             280: {
+                 items: 1
              },
              767: {
                  items: 2
@@ -98,7 +96,7 @@ $(document).ready(function () {
     $(function () {
         $(".video_wrapper_revs .video_rev_img").click(function () {
             var a = $(this).parent().attr("data-youtube");
-            $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  allowfullscreen></iframe>');
+            $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?enablejsapi=1&mute=1&showinfo=0&rel=0&autoplay=1"  allowfullscreen></iframe>');
             console.log(a);
         });
     });
@@ -111,7 +109,7 @@ $(document).ready(function () {
             });
             $(".video_wrapper_revs .video_rev_img").click(function () {
                 var a = $(this).parent().attr("data-youtube");
-                $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>');
+                $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?enablejsapi=1&mute=1&showinfo=0&rel=0&autoplay=1"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>');
             });
         });
     })

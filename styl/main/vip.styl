@@ -48,17 +48,23 @@
 	margin-bottom: 15px
 	overflow hidden
 	&:before
+	&:after
 		content: ''
 		display: block
 		position: absolute
 		top 12px
 		left 0
 		height 2px
-		width 190px
+		width 100%
+		max-width 190px
 		background-color: #FFDE00
+	&:after
+		display: none
+		right 0
+		left auto
 .vip_for_item_2
 	&:before
-		width 200px
+		max-width 200px
 		left auto
 		right 0
 .vip_for_item_text
@@ -115,43 +121,57 @@
 		margin-bottom: 0
 	span
 		color #ffe013
-.vip_ol_list {
-	list-style: none;
-	counter-reset: my-counter;
-}
-.vip_ol_list li {
-	counter-increment: my-counter;
-	margin: 0 0 40px 70px;
+.vip_ol_list li
+	margin: 0 0 40px 0;
+	padding-left: 70px
 	color: #ffffff
-	line-height: 24px
-}
-.vip_ol_list li::before {
-	content: counter(my-counter);
+	line-height: 24px;
+	list-style none
+	position relative
+.vip_ol_list li::before
+	content: ''
 	border 2px solid rgb(254, 220, 24);
 	background-color: rgb(255, 255, 255);
-	display: inline-block
+	display: block
+	position: absolute
+	left 0
+	top 5px
 	text-align: center
-	margin  0 23px 0 -70px
 	width: 47px;
 	height: 47px;
 	line-height: 42px;
 	font-size: 30px;
-	position relative
-	top 23px
 	font-family: "AkrobatBold", sans-serif;
 	color: rgb(220, 190, 16);
-}
-.vip_ol_list_2
-	counter-reset: my-counter-2 4;
-	li
-		counter-increment: my-counter-2;
-		&:before
-			content: counter(my-counter-2);
-.vip_ol_list_3
-	counter-reset: my-counter-3 8;
-	li
-		counter-increment: my-counter-3;
-		&:before
-			content: counter(my-counter-3);
 .button_vip
 	margin-top: 40px
+.vip_ol_list_1 li:first-child
+	&:before
+		content: '1'
+.vip_ol_list_1 li:nth-child(2)
+	&:before
+		content: '2'
+.vip_ol_list_1 li:nth-child(3)
+	&:before
+		content: '3'
+.vip_ol_list_1 li:nth-child(4)
+	&:before
+		content: '4'
+.vip_ol_list_2 li:first-child
+	&:before
+		content: '5'
+.vip_ol_list_2 li:nth-child(2)
+	&:before
+		content: '6'
+.vip_ol_list_2 li:nth-child(3)
+	&:before
+		content: '7'
+.vip_ol_list_2 li:nth-child(4)
+	&:before
+		content: '8'
+.vip_ol_list_3 li:first-child
+	&:before
+		content: '9'
+.vip_ol_list_3 li:nth-child(2)
+	&:before
+		content: '10'
